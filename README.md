@@ -12,29 +12,7 @@
 |------|---------|--------|
 | 1 | Landing Page | [WebDev-Level1-Task1-LandingPage](./WebDev-Level1-Task1-LandingPage) |
 | 2 | Personal Portfolio | [WebDev-Level1-Task2-PersonalPortfolio](./WebDev-Level1-Task2-PersonalPortfolio) |
-| 3 | In progress | |
+| 3 | Temperature Converter | [WebDev-Level1-Task3-TemperatureConverter](./WebDev-Level1-Task3-TemperatureConverter) |
 
 ## Tech used
 HTML5, CSS3, JavaScript
-
-# Personal Portfolio (OIBSIP Web Development, Level 1, Task 2)
-
-A personal portfolio website showcasing my skills, projects, education and contact details.
-
-## Features
-- Hero section with name, photo and introduction
-- About Me section
-- Skills grid grouped by category
-- Project cards loaded from GitHub
-- Education and experience sections
-- Contact section with email, phone, LinkedIn and GitHub
-- Smooth scroll navigation and a responsive layout
-
-## Tech used
-HTML5, CSS3, JavaScript
-
-## Run it
-Open `index.html` in a browser. You need to be online for the project cards to load.
-
-## Live version
-https://zaneradebe6.github.io/Zanele_Portfolio/
