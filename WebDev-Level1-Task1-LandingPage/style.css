@@ -1,0 +1,112 @@
+/* Palette */
+:root {
+  --teal: #0f3d3e;
+  --teal-light: #1c5a5b;
+  --paper: #f5f7f2;
+  --ink: #12201f;
+  --muted: #5a6b69;
+  --gold: #f2b134;
+  --line: #d5dcd6;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+h1, h2, h3 {
+  font-family: "Bricolage Grotesque", Arial, sans-serif;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+h1 { font-size: clamp(2.4rem, 6vw, 4rem); font-weight: 800; }
+h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 800; }
+h3 { font-size: 1.3rem; font-weight: 600; }
+p { margin: 0 0 1rem; max-width: 60ch; }
+ul { list-style: none; margin: 0; padding: 0; }
+a { color: inherit; }
+a:focus-visible, .btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+.container { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* Navigation */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.logo { font-family: "Bricolage Grotesque", Arial, sans-serif; font-weight: 800; font-size: 1.2rem; text-decoration: none; }
+.nav-links { display: flex; gap: 1.75rem; }
+.nav-links a { text-decoration: none; font-weight: 600; padding: 0.25rem 0; border-bottom: 2px solid transparent; }
+.nav-links a:hover { border-bottom-color: var(--gold); }
+
+/* Hero */
+.hero { background: var(--teal); color: var(--paper); padding: 5rem 0; }
+.hero-inner { display: flex; align-items: center; gap: 3rem; }
+.hero-text { flex: 1 1 50%; }
+.subhead { font-size: 1.3rem; color: #d4e2dd; margin-bottom: 2rem; }
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.75rem;
+  background: var(--gold);
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.btn:hover { background: #ffc552; }
+
+/* Browser mock-up (pure CSS) */
+.browser { flex: 1 1 50%; background: var(--paper); border-radius: 10px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); }
+.browser-bar { display: flex; gap: 6px; padding: 12px 14px; background: #e3e8e3; }
+.browser-bar span { width: 10px; height: 10px; border-radius: 50%; background: #aab5b0; }
+.browser-body { padding: 2rem; display: flex; flex-direction: column; gap: 14px; }
+.mock { border-radius: 4px; background: var(--line); }
+.mock-title { height: 28px; width: 70%; background: var(--teal-light); }
+.mock-line { height: 12px; width: 100%; }
+.mock-line.short { width: 60%; }
+.mock-btn { height: 34px; width: 120px; margin-top: 8px; background: var(--gold); }
+
+/* Sections */
+.section { padding: 5rem 0; }
+.services li { padding: 1.5rem 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 2fr; gap: 1.5rem; }
+.services li:last-child { border-bottom: 1px solid var(--line); }
+.services h3, .services p { margin: 0; }
+
+.about { background: #e8eee9; }
+.about-inner { display: grid; grid-template-columns: 1fr 2fr; gap: 1.5rem; }
+
+/* Footer */
+.footer { background: var(--teal); color: var(--paper); padding: 4rem 0 1.5rem; }
+.footer-inner { display: flex; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+.footer p { color: #d4e2dd; }
+.contact-list li { margin-bottom: 0.5rem; }
+.contact-list a:hover { color: var(--gold); }
+.copy { text-align: center; margin: 3rem 0 0; font-size: 0.95rem; max-width: none; }
+
+/* Mobile */
+@media (max-width: 760px) {
+  .hero { padding: 3rem 0; }
+  .hero-inner { flex-direction: column; align-items: stretch; }
+  .section { padding: 3rem 0; }
+  .services li, .about-inner { grid-template-columns: 1fr; gap: 0.5rem; }
+  .nav-links { gap: 1rem; }
+  .logo { font-size: 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
+}
