@@ -1,0 +1,90 @@
+:root {
+  --bg: #eef3f7;
+  --card: #ffffff;
+  --ink: #16212b;
+  --muted: #5d6c7a;
+  --accent: #1f6feb;
+  --accent-dark: #1858bd;
+  --error: #b42318;
+  --line: #d6dee6;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1.05rem;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  padding: 2rem;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(22, 33, 43, 0.1);
+}
+
+h1 { margin: 0 0 0.5rem; font-size: 1.8rem; text-align: center; }
+h2 { margin: 0 0 0.75rem; font-size: 1.2rem; }
+.intro { margin: 0 0 1.5rem; text-align: center; color: var(--muted); }
+
+.field { margin-bottom: 1.1rem; }
+label { display: block; margin-bottom: 0.35rem; font-weight: 600; }
+
+input, select {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+input:focus, select:focus, .btn:focus-visible {
+  outline: 3px solid rgba(31, 111, 235, 0.35);
+  border-color: var(--accent);
+}
+input.invalid { border-color: var(--error); }
+
+.error { min-height: 1.4rem; margin: 0 0 0.75rem; color: var(--error); font-size: 0.95rem; }
+
+.btn {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:hover { background: var(--accent-dark); }
+
+.results { margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+.results ul { list-style: none; margin: 0; padding: 0; }
+.results li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.results li:last-child { border-bottom: none; }
+.results span { color: var(--muted); }
+.results strong { font-size: 1.15rem; }
+
+@media (max-width: 480px) {
+  .card { padding: 1.25rem; }
+  h1 { font-size: 1.5rem; }
+}
