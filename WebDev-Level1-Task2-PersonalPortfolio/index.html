@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zanele Radebe — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="brand"><span class="dot"></span>ZANELE&nbsp;RADEBE</div>
+    <div class="navlinks" id="navlinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="navtoggle" id="navtoggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="progress-bar" id="progressBar"></div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <img src="Profile.jpeg" alt="Zanele Radebe" class="profile-photo">
+      <div class="eyebrow mono">JOHANNESBURG SOUTH, ZA</div>
+      <h1>Zanele Radebe</h1>
+      <p class="role">Final-year BSc Information Technology student who builds full-stack systems in C#, Python and SQL — comfortable across web development, databases, and networking, with a particular interest in how software works inside larger organisations.</p>
+      <div class="status-pill"><span class="dot"></span>OPEN TO INTERNSHIPS &amp; GRADUATE ROLES</div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contact">Get in touch</a>
+        <a class="btn btn-ghost" href="#projects">View work</a>
+      </div>
+    </div>
+
+    <div class="statement" id="statement-card">
+      <!-- filled dynamically by app.js -->
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">About</div>
+      <h2>Someone who ships, not just studies</h2>
+    </div>
+    <div class="about-body reveal">
+      <p>I'm in my final year of a BSc in Information Technology at North-West University, and I like building things that actually run — not just coursework that stays in a folder. My work so far spans full-stack web development, database design, and networking fundamentals.</p>
+      <p>I'm still exploring where I want to specialise, and I like that about this stage — I've built a booking platform, an AI-assisted tool, and worked through enterprise network design, and I'm open to roles across software development, systems, or IT support where I can keep building on all of it.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Projects</div>
+      <h2>Deployed systems</h2>
+      <p>Pulled live from GitHub — stars and last-updated date refresh automatically.</p>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+      <!-- filled dynamically by app.js -->
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Experience</div>
+      <h2>Ledger of work</h2>
+    </div>
+    <div class="ledger" id="experience-list">
+      <!-- filled dynamically by app.js -->
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Education</div>
+      <h2>Record</h2>
+    </div>
+    <div class="edu-grid" id="education-grid">
+      <!-- filled dynamically by app.js -->
+    </div>
+    <div class="cert-line reveal">
+      <span class="mono">CERT//</span>
+      <span>Introduction to Cyber Security — Simplilearn</span>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Skills</div>
+      <h2>Stack &amp; toolkit</h2>
+    </div>
+    <div class="skills-grid" id="skills-grid">
+      <!-- filled dynamically by app.js -->
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <div>
+        <h2>Let's talk.</h2>
+        <p>Open to internships and graduate roles across software development, systems, and IT.</p>
+      </div>
+      <div class="contact-list">
+        <div class="contact-item">
+          <span class="label">Email</span>
+          <span><a class="val" href="mailto:zaneradebe6@gmail.com">zaneradebe6@gmail.com</a><button class="copy-btn" data-copy="zaneradebe6@gmail.com">Copy</button></span>
+        </div>
+        <div class="contact-item">
+          <span class="label">Phone</span>
+          <a class="val" href="tel:0827332890">082 733 2890</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">LinkedIn</span>
+          <a class="val" href="https://linkedin.com/in/zanele-radebe-702a2829a" target="_blank" rel="noopener">zanele-radebe</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">GitHub</span>
+          <a class="val" href="https://github.com/Zaneradebe6" target="_blank" rel="noopener">Zaneradebe6</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>ZANELE RADEBE · JOHANNESBURG SOUTH, ZA · 2026</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
